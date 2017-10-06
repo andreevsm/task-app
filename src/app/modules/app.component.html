@@ -1,0 +1,21 @@
+<div class="wrapper">
+
+    <div class="toolbar">
+        <md-toolbar>
+            My task list
+        </md-toolbar>
+    </div>
+
+
+    <div class="create-task">
+        <button md-mini-fab color="primary" (click)="addTask(title)"><md-icon>add</md-icon></button>
+        <md-input-container>
+            <input mdInput placeholder="Enter new task" [(ngModel)]="title">
+        </md-input-container>
+    </div>
+
+
+
+    <app-task *ngFor="let task of tasks" [task]="task" (onUpdate)="updateStatus($event)" (onDelete)="delete($event)"></app-task>
+
+</div>

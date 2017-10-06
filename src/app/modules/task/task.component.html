@@ -1,0 +1,10 @@
+<md-card>
+    <md-checkbox [checked]="task.isDone" (click)="this.onUpdate.emit(task)"></md-checkbox>
+    <span>{{task.title}}</span>
+
+    <div class="buttons">
+        <button md-icon-button (click)="this.onDelete.emit(task._id)">
+        <md-icon>delete</md-icon>
+      </button>
+    </div>
+</md-card>
