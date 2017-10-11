@@ -9,14 +9,15 @@ import { Task, TaskFactory } from '../models/task.model';
 import { AppComponent } from './app.component';
 
 import {
-  MdButtonModule,
-  MdMenuModule,
-  MdToolbarModule,
-  MdIconModule,
-  MdCardModule,
-  MdInputModule,
-  MdCheckboxModule
+  MatButtonModule,
+  MatMenuModule,
+  MatToolbarModule,
+  MatIconModule,
+  MatCardModule,
+  MatInputModule,
+  MatCheckboxModule
 } from '@angular/material';
+
 import 'hammerjs';
 import { TaskComponent } from './task/task.component';
 
@@ -29,15 +30,15 @@ import { TaskComponent } from './task/task.component';
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
-    MdButtonModule,
-    MdMenuModule,
-    MdToolbarModule,
-    MdIconModule,
-    MdCardModule,
+    MatButtonModule,
+    MatMenuModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatCardModule,
+    MatInputModule,
+    MatCheckboxModule,
     FormsModule,
     HttpModule,
-    MdInputModule,
-    MdCheckboxModule
   ],
   providers: [
     TaskFactory

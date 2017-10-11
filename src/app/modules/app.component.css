@@ -1,5 +1,6 @@
 .toolbar {
     display: flex;
+    margin: 24px;
 }
 
 md-toolbar {

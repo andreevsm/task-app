@@ -1,10 +1,10 @@
-<md-card>
-    <md-checkbox [checked]="task.isDone" (click)="this.onUpdate.emit(task)"></md-checkbox>
+<mat-card>
+    <mat-checkbox [checked]="task.isDone" (click)="this.onUpdate.emit(task)"></mat-checkbox>
     <span>{{task.title}}</span>
 
     <div class="buttons">
         <button md-icon-button (click)="this.onDelete.emit(task._id)">
-        <md-icon>delete</md-icon>
+        <mat-icon>delete</mat-icon>
       </button>
     </div>
-</md-card>
+</mat-card>

@@ -1,17 +1,20 @@
 <div class="wrapper">
 
     <div class="toolbar">
-        <md-toolbar>
+        <mat-toolbar>
             My task list
-        </md-toolbar>
+        </mat-toolbar>
     </div>
 
-
     <div class="create-task">
-        <button md-mini-fab color="primary" (click)="addTask(title)"><md-icon>add</md-icon></button>
-        <md-input-container>
-            <input mdInput placeholder="Enter new task" [(ngModel)]="title">
-        </md-input-container>
+
+        <button mat-mini-fab color="primary" (click)="addTask(title)"><mat-icon>add</mat-icon></button>
+        <mat-form-field>
+            <input matInput placeholder="Enter new task" [(ngModel)]="title">
+        </mat-form-field>
+
+
+
     </div>
 
 
